@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-chromedriver_path = "C:/Users/Szalai Dániel/Documents/chromedriver.exe"
+chromedriver_path = "C:/your/chrome/webdriver/path/chromedriver.exe"
 driver = webdriver.Chrome(executable_path=chromedriver_path)
 driver.get("http://orteil.dashnet.org/experiments/cookie/")
 cookie = driver.find_element(By.ID, 'cookie')
